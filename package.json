@@ -1,0 +1,24 @@
+{
+  "name": "notary-blockchain",
+  "version": "1.0.0",
+  "description": "Blockchain Stars Notarization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Blockchain",
+    "Notary",
+    "Project"
+  ],
+  "author": "Sagar Atalatti",
+  "license": "ISC",
+  "dependencies": {
+    "bitcoinjs-message": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.4",
+    "level": "^4.0.0"
+  }
+}
