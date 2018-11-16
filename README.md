@@ -46,7 +46,7 @@ $ cd NotaryBlockchain
 $ npm install
 $ node index
 ```
-The node server will be deployed to http://localhost:8000
+The node server will be deployed to ```http://localhost:8000```
 
 Download and install [Electrum Wallet] to create your bitcoin wallet.
 
@@ -57,7 +57,7 @@ Get your bitcoin address from Electrum Wallet.
 Now use Postman to interact with the API.
 
 #### POST
-Request new address validation. Use POST.
+Request new address validation. Use POST at ```http://localhost:8000/requestValidation```
 
 ![Request Validation](https://i.imgur.com/tPOMndp.png)
 
@@ -71,7 +71,7 @@ Use Electrum Wallet to Sign this message with your bitcoin address.
 
 ![Signing Message with Bitcoin Address](https://i.imgur.com/xDME0oP.png)
 
-Copy the the generated signature and use POST to validate Signature.
+Copy the the generated signature and use POST to validate Signature at ```http://localhost:8000/message-signature/validate```.
 
 ![Validate Signed Message](https://i.imgur.com/qdZoHsG.png)
 
@@ -91,7 +91,7 @@ We need these co-ordinates for registration with a story (Only ASCII text) you w
 - MAG = Magnitude
 - CON = Constellation
 
-Use POST to send this JSON request to register your star with address parameter at http://localhost:8000/block
+Use POST to send this JSON request to register your star with address parameter at ```http://localhost:8000/block```
 
 ```json
 {
