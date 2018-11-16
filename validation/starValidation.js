@@ -33,7 +33,7 @@ class StarValidation {
         // Retrieve star JSON from the request.
         const { star } = this.req.body;
         // Star co-ordinates in the sky. RA = Right Ascension, DEC = Declination, MAG = Magnitude & Story.
-        const { ra, dec, mag, story } = star;
+        const { ra, dec, mag, con, story } = star;
 
         //Check if the requested address is not empty.
         if (!this.validateAddressParameter() || !this.req.body.star) {
@@ -41,9 +41,9 @@ class StarValidation {
         }
 
         //Check if star co-ordinates are non-empty string properties
-        if (typeof ra !== 'string' || typeof dec !== 'string' || typeof mag !== 'string' ||
-            typeof story !== 'string' || !ra.length || !dec.length || !mag.length || !story.length) {
-            throw new Error("Your star information should include non-empty string properties for 'ra', 'dec', 'mag' and 'story'")
+        if (typeof ra !== 'string' || typeof dec !== 'string' || typeof mag !== 'string' || typeof  con !== 'string' ||
+            typeof story !== 'string' || !ra.length || !dec.length || !mag.length || !con.length || !story.length) {
+            throw new Error("Your star information should include non-empty string properties for 'ra', 'dec', 'mag', 'con' and 'story'")
         }
 
         //Check if story meets the criteria for 500 bytes.
