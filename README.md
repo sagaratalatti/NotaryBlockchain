@@ -1,7 +1,5 @@
 # Star Notarization on Blockchain
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 A Star Registry Service that allows users to claim ownership of their favorite star in the night sky.
 
 # Implementations in this project.
